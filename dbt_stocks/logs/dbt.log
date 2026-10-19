@@ -1,0 +1,474 @@
+[0m02:40:55.101660 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000272FE262120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000272FBDE4B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000272FFC1B890>]}
+
+
+============================== 02:40:55.107158 | 004749ca-4fb7-4ef5-a8fd-08374bc38103 ==============================
+[0m02:40:55.107158 [info ] [MainThread]: Running with dbt=1.12.5
+[0m02:40:55.107877 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Admin\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt debug', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'logs'}
+[0m02:40:55.164748 [info ] [MainThread]: dbt version: 1.12.5
+[0m02:40:55.165473 [info ] [MainThread]: python version: 3.14.7
+[0m02:40:55.166305 [info ] [MainThread]: python path: C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\python.exe
+[0m02:40:55.167023 [info ] [MainThread]: os info: Windows-11-10.0.26300-SP0
+[0m02:40:55.167786 [info ] [MainThread]: Using profiles dir at C:\Users\Admin\.dbt
+[0m02:40:55.168480 [info ] [MainThread]: Using profiles.yml file at C:\Users\Admin\.dbt\profiles.yml
+[0m02:40:55.169157 [info ] [MainThread]: Using dbt_project.yml file at D:\real-time-stocks-mds-main\dbt_stocks\dbt_project.yml
+[0m02:40:55.169805 [info ] [MainThread]: Configuration:
+[0m02:40:55.170327 [info ] [MainThread]:   profiles.yml file [[31mERROR not found[0m]
+[0m02:40:55.171118 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m02:40:55.172054 [info ] [MainThread]: Required dependencies:
+[0m02:40:55.172775 [debug] [MainThread]: Executing "git --help"
+[0m02:40:55.250992 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m02:40:55.251568 [debug] [MainThread]: STDERR: "b''"
+[0m02:40:55.252031 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m02:40:55.252492 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m02:40:55.252957 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m02:40:55.253397 [info ] [MainThread]: dbt looked for a profiles.yml file in C:\Users\Admin\.dbt\profiles.yml, but did
+not find one. For more information on configuring your profile, consult the
+documentation:
+
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m02:40:55.253826 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <D:\real-time-stocks-mds-main\dbt_stocks\dbt_project.yml> not found
+
+[0m02:40:55.254941 [debug] [MainThread]: Command `dbt debug` failed at 02:40:55.254797 after 0.35 seconds
+[0m02:40:55.255390 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000272FFA52B10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000272FFC815B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000272FFC279B0>]}
+[0m02:40:55.255822 [debug] [MainThread]: Flushing usage events
+[0m02:40:56.329989 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m03:01:14.057278 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001253EC42120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001253C7D4B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000125415B7890>]}
+
+
+============================== 03:01:14.061409 | 00ebb24f-f357-45f5-99cf-824e0b45be17 ==============================
+[0m03:01:14.061409 [info ] [MainThread]: Running with dbt=1.12.5
+[0m03:01:14.062051 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Admin\\.dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt init dbt_stocks', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'logs'}
+[0m03:01:14.093102 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\Admin\.dbt
+[0m03:01:14.102940 [debug] [MainThread]: Starter project path: C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\dbt\include\starter_project
+[0m03:01:14.132755 [info ] [MainThread]: Setting up your profile.
+[0m03:01:45.331396 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m03:01:45.334366 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m03:01:45.334930 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m03:05:23.115231 [info ] [MainThread]: Profile dbt_stocks written to C:\Users\Admin\.dbt\profiles.yml using target's profile_template.yml and your supplied values.
+[0m03:05:23.118320 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m03:05:23.119043 [info ] [MainThread]: dbt version: 1.12.5
+[0m03:05:23.119557 [info ] [MainThread]: python version: 3.14.7
+[0m03:05:23.120175 [info ] [MainThread]: python path: C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\python.exe
+[0m03:05:23.120680 [info ] [MainThread]: os info: Windows-11-10.0.26300-SP0
+[0m03:05:23.251463 [info ] [MainThread]: Using profiles dir at C:\Users\Admin\.dbt
+[0m03:05:23.252092 [info ] [MainThread]: Using profiles.yml file at C:\Users\Admin\.dbt\profiles.yml
+[0m03:05:23.252577 [info ] [MainThread]: Using dbt_project.yml file at D:\real-time-stocks-mds-main\dbt_stocks\dbt_stocks\dbt_project.yml
+[0m03:05:23.254023 [info ] [MainThread]: adapter type: snowflake
+[0m03:05:23.254506 [info ] [MainThread]: adapter version: 1.12.1
+[0m03:05:23.386142 [info ] [MainThread]: Configuration:
+[0m03:05:23.386809 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m03:05:23.387277 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m03:05:23.387776 [info ] [MainThread]: Required dependencies:
+[0m03:05:23.388290 [debug] [MainThread]: Executing "git --help"
+[0m03:05:23.486245 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m03:05:23.489093 [debug] [MainThread]: STDERR: "b''"
+[0m03:05:23.491149 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m03:05:23.492664 [info ] [MainThread]: Connection:
+[0m03:05:23.493399 [info ] [MainThread]:   account: uv99588.southeast-asia.azure
+[0m03:05:23.493914 [info ] [MainThread]:   user: qcuowqq233
+[0m03:05:23.494511 [info ] [MainThread]:   database: STOCK_MDS
+[0m03:05:23.495052 [info ] [MainThread]:   warehouse: COMPUTE_WH
+[0m03:05:23.495507 [info ] [MainThread]:   role: ACCOUNTADMIN
+[0m03:05:23.496030 [info ] [MainThread]:   schema: COMMON
+[0m03:05:23.496523 [info ] [MainThread]:   authenticator: None
+[0m03:05:23.497034 [info ] [MainThread]:   oauth_client_id: None
+[0m03:05:23.497488 [info ] [MainThread]:   query_tag: None
+[0m03:05:23.497988 [info ] [MainThread]:   client_session_keep_alive: False
+[0m03:05:23.498459 [info ] [MainThread]:   host: None
+[0m03:05:23.498958 [info ] [MainThread]:   port: None
+[0m03:05:23.499418 [info ] [MainThread]:   proxy_host: None
+[0m03:05:23.499953 [info ] [MainThread]:   proxy_port: None
+[0m03:05:23.500471 [info ] [MainThread]:   protocol: None
+[0m03:05:23.500938 [info ] [MainThread]:   connect_retries: 1
+[0m03:05:23.501409 [info ] [MainThread]:   connect_timeout: None
+[0m03:05:23.501938 [info ] [MainThread]:   retry_on_database_errors: False
+[0m03:05:23.502421 [info ] [MainThread]:   retry_all: False
+[0m03:05:23.502995 [info ] [MainThread]:   insecure_mode: False
+[0m03:05:23.503475 [info ] [MainThread]:   reuse_connections: True
+[0m03:05:23.503980 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m03:05:23.504601 [info ] [MainThread]:   workload_identity_provider: None
+[0m03:05:23.505198 [info ] [MainThread]:   workload_identity_entra_resource: None
+[0m03:05:23.505900 [info ] [MainThread]:   platform_detection_timeout_seconds: 0.0
+[0m03:05:23.506688 [info ] [MainThread]: Registered adapter: snowflake=1.12.1
+[0m03:05:25.686972 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m03:05:25.702319 [debug] [MainThread]: Using snowflake connection "debug"
+[0m03:05:25.705081 [debug] [MainThread]: On debug: select 1 as id
+[0m03:05:25.709923 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m03:05:26.819237 [debug] [MainThread]: SQL status: SUCCESS 1 in 1.109 seconds
+[0m03:05:26.821132 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m03:05:26.822352 [info ] [MainThread]: [32mAll checks passed![0m
+[0m03:05:26.823267 [info ] [MainThread]: Your new dbt project "dbt_stocks" was created!
+Initialized new project in D:\real-time-stocks-mds-main\dbt_stocks\dbt_stocks\dbt_stocks
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m03:05:26.825253 [debug] [MainThread]: Command `dbt init` succeeded at 03:05:26.825055 after 253.00 seconds
+[0m03:05:26.825716 [debug] [MainThread]: Connection 'debug' was left open.
+[0m03:05:26.826101 [debug] [MainThread]: On debug: Close
+[0m03:05:27.702546 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012541402B10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001255DD0E450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001255DC42E00>]}
+[0m03:05:27.706734 [debug] [MainThread]: Flushing usage events
+[0m03:05:28.742009 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m03:06:01.269124 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B0B2F42120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B0B0AD8B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B0B5927890>]}
+
+
+============================== 03:06:01.285019 | eb4bb4ee-31ed-4e6c-ad4a-25e94c04f34b ==============================
+[0m03:06:01.285019 [info ] [MainThread]: Running with dbt=1.12.5
+[0m03:06:01.285934 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Admin\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run', 'log_path': 'logs'}
+[0m03:06:01.286615 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path D:\real-time-stocks-mds-main\dbt_stocks\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m03:06:01.288002 [debug] [MainThread]: Command `dbt run` failed at 03:06:01.287795 after 0.33 seconds
+[0m03:06:01.288491 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B0B58B08A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B0B59B4290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B0B5970F30>]}
+[0m03:06:01.288955 [debug] [MainThread]: Flushing usage events
+[0m03:06:02.258310 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m03:14:54.663429 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026799222120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026796DB4B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002679BC07890>]}
+
+
+============================== 03:14:54.669238 | 7f6ca2d1-ee28-46df-a46a-5588eb236ad3 ==============================
+[0m03:14:54.669238 [info ] [MainThread]: Running with dbt=1.12.5
+[0m03:14:54.670096 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Admin\\.dbt', 'invocation_command': 'dbt run', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'logs'}
+[0m03:14:54.670759 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path D:\real-time-stocks-mds-main\dbt_stocks\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m03:14:54.672092 [debug] [MainThread]: Command `dbt run` failed at 03:14:54.671941 after 0.23 seconds
+[0m03:14:54.672544 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002679BB908A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002679BCB0290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002679BC50F30>]}
+[0m03:14:54.673028 [debug] [MainThread]: Flushing usage events
+[0m03:14:55.675038 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m03:17:58.869382 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012D8B222120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012D88DA4B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012D8DC07890>]}
+
+
+============================== 03:17:58.873697 | 646e357f-4df7-4af2-ba55-3a28aae525c6 ==============================
+[0m03:17:58.873697 [info ] [MainThread]: Running with dbt=1.12.5
+[0m03:17:58.874286 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Admin\\.dbt', 'invocation_command': 'dbt run', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'D:\\real-time-stocks-mds-main\\dbt_stocks\\logs'}
+[0m03:18:00.138978 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m03:18:00.139457 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m03:18:00.139815 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m03:18:00.614682 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '646e357f-4df7-4af2-ba55-3a28aae525c6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012DA9DB2520>]}
+[0m03:18:00.700894 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '646e357f-4df7-4af2-ba55-3a28aae525c6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012DAA103CE0>]}
+[0m03:18:00.703007 [info ] [MainThread]: Registered adapter: snowflake=1.12.1
+[0m03:18:01.628535 [debug] [MainThread]: checksum: b97abe5bd1226702a4ea69444fae0a6c9d7459f202254310da692205a5f8a8f3, vars: {}, profile: dbt_stocks, target: dev, version: 1.12.5
+[0m03:18:01.629781 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m03:18:01.630332 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '646e357f-4df7-4af2-ba55-3a28aae525c6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012DAA008950>]}
+[0m03:18:04.786408 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_stocks.example
+[0m03:18:04.792919 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '646e357f-4df7-4af2-ba55-3a28aae525c6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012D8DC387D0>]}
+[0m03:18:04.925836 [debug] [MainThread]: Wrote artifact WritableManifest to D:\real-time-stocks-mds-main\dbt_stocks\target\manifest.json
+[0m03:18:04.930270 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\real-time-stocks-mds-main\dbt_stocks\target\semantic_manifest.json
+[0m03:18:05.020995 [debug] [MainThread]: Wrote artifact OsiDocument to D:\real-time-stocks-mds-main\dbt_stocks\target\osi_document.json
+[0m03:18:05.038268 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '646e357f-4df7-4af2-ba55-3a28aae525c6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012DAB89E5F0>]}
+[0m03:18:05.039030 [info ] [MainThread]: Found 5 models, 1 source, 562 macros
+[0m03:18:05.039634 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '646e357f-4df7-4af2-ba55-3a28aae525c6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012DAA639B20>]}
+[0m03:18:05.042341 [info ] [MainThread]: 
+[0m03:18:05.042960 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m03:18:05.043527 [info ] [MainThread]: 
+[0m03:18:05.044358 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m03:18:05.052054 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_STOCK_MDS'
+[0m03:18:05.073400 [debug] [ThreadPool]: Using snowflake connection "list_STOCK_MDS"
+[0m03:18:05.073929 [debug] [ThreadPool]: On list_STOCK_MDS: show terse schemas in database STOCK_MDS
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "dbt_stocks", "target_name": "dev", "connection_name": "list_STOCK_MDS"} */
+[0m03:18:05.074350 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:18:06.035711 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.961 seconds
+[0m03:18:06.042396 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_STOCK_MDS_COMMON'
+[0m03:18:06.057391 [debug] [ThreadPool]: Using snowflake connection "list_STOCK_MDS_COMMON"
+[0m03:18:06.057840 [debug] [ThreadPool]: On list_STOCK_MDS_COMMON: show objects in STOCK_MDS.COMMON
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "dbt_stocks", "target_name": "dev", "connection_name": "list_STOCK_MDS_COMMON"} */;
+[0m03:18:06.058175 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:18:06.915816 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.858 seconds
+[0m03:18:06.923636 [debug] [ThreadPool]: Using snowflake connection "list_STOCK_MDS_COMMON"
+[0m03:18:06.924109 [debug] [ThreadPool]: On list_STOCK_MDS_COMMON: show user functions in STOCK_MDS.COMMON
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "dbt_stocks", "target_name": "dev", "connection_name": "list_STOCK_MDS_COMMON"} */
+[0m03:18:07.053593 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.129 seconds
+[0m03:18:07.056905 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '646e357f-4df7-4af2-ba55-3a28aae525c6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012DABA43410>]}
+[0m03:18:07.063074 [debug] [Thread-2 (]: Began running node model.dbt_stocks.bronze_stg_stock_quotes
+[0m03:18:07.064018 [info ] [Thread-2 (]: 1 of 5 START sql view model COMMON.bronze_stg_stock_quotes ..................... [RUN]
+[0m03:18:07.064899 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.dbt_stocks.bronze_stg_stock_quotes'
+[0m03:18:07.065399 [debug] [Thread-2 (]: Began compiling node model.dbt_stocks.bronze_stg_stock_quotes
+[0m03:18:07.072420 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_stocks.bronze_stg_stock_quotes"
+[0m03:18:07.074110 [debug] [Thread-2 (]: Began executing node model.dbt_stocks.bronze_stg_stock_quotes
+[0m03:18:07.117020 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_stocks.bronze_stg_stock_quotes"
+[0m03:18:07.119728 [debug] [Thread-2 (]: Using snowflake connection "model.dbt_stocks.bronze_stg_stock_quotes"
+[0m03:18:07.120326 [debug] [Thread-2 (]: On model.dbt_stocks.bronze_stg_stock_quotes: create or replace   view STOCK_MDS.COMMON.bronze_stg_stock_quotes
+  
+  
+  
+  
+  as (
+    SELECT
+    v:c::float AS current_price,
+    v:d::float AS change_amount,
+    v:dp::float AS change_percent,
+    v:h::float AS day_high,
+    v:l::float AS day_low,
+    v:o::float AS day_open,
+    v:pc::float AS prev_close,
+    v:t::timestamp AS market_timestamp,
+    v:symbol::string AS symbol,
+    v:fetched_at::timestamp AS fetched_at
+FROM STOCK_MDS.COMMON.bronze_stock_quotes_raw
+  )
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "dbt_stocks", "target_name": "dev", "node_id": "model.dbt_stocks.bronze_stg_stock_quotes"} */;
+[0m03:18:07.120875 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m03:18:08.123103 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.002 seconds
+[0m03:18:08.152116 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '646e357f-4df7-4af2-ba55-3a28aae525c6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012D8B73B070>]}
+[0m03:18:08.153129 [info ] [Thread-2 (]: 1 of 5 OK created sql view model COMMON.bronze_stg_stock_quotes ................ [[32mSUCCESS 1[0m in 1.09s]
+[0m03:18:08.154065 [debug] [Thread-2 (]: Finished running node model.dbt_stocks.bronze_stg_stock_quotes
+[0m03:18:08.155103 [debug] [Thread-3 (]: Began running node model.dbt_stocks.silver_clean_stock_quotes
+[0m03:18:08.155962 [info ] [Thread-3 (]: 2 of 5 START sql view model COMMON.silver_clean_stock_quotes ................... [RUN]
+[0m03:18:08.156894 [debug] [Thread-3 (]: Acquiring new snowflake connection 'model.dbt_stocks.silver_clean_stock_quotes'
+[0m03:18:08.157453 [debug] [Thread-3 (]: Began compiling node model.dbt_stocks.silver_clean_stock_quotes
+[0m03:18:08.159843 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_stocks.silver_clean_stock_quotes"
+[0m03:18:08.161075 [debug] [Thread-3 (]: Began executing node model.dbt_stocks.silver_clean_stock_quotes
+[0m03:18:08.164044 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_stocks.silver_clean_stock_quotes"
+[0m03:18:08.165950 [debug] [Thread-3 (]: Using snowflake connection "model.dbt_stocks.silver_clean_stock_quotes"
+[0m03:18:08.166539 [debug] [Thread-3 (]: On model.dbt_stocks.silver_clean_stock_quotes: create or replace   view STOCK_MDS.COMMON.silver_clean_stock_quotes
+  
+  
+  
+  
+  as (
+    SELECT
+    symbol,
+    current_price,
+    ROUND(day_high, 2) AS day_high,
+    ROUND(day_low, 2) AS day_low,
+    ROUND(day_open, 2) AS day_open,
+    ROUND(prev_close, 2) AS prev_close,
+    change_amount,
+    ROUND(change_percent, 4) AS change_percent,
+    market_timestamp,
+    fetched_at
+FROM STOCK_MDS.COMMON.bronze_stg_stock_quotes
+WHERE current_price IS NOT NULL
+  )
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "dbt_stocks", "target_name": "dev", "node_id": "model.dbt_stocks.silver_clean_stock_quotes"} */;
+[0m03:18:08.167021 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m03:18:09.280693 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 1.114 seconds
+[0m03:18:09.283224 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '646e357f-4df7-4af2-ba55-3a28aae525c6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012DABA5BED0>]}
+[0m03:18:09.283886 [info ] [Thread-3 (]: 2 of 5 OK created sql view model COMMON.silver_clean_stock_quotes .............. [[32mSUCCESS 1[0m in 1.13s]
+[0m03:18:09.284677 [debug] [Thread-3 (]: Finished running node model.dbt_stocks.silver_clean_stock_quotes
+[0m03:18:09.285447 [debug] [Thread-4 (]: Began running node model.dbt_stocks.gold_candlestick
+[0m03:18:09.286378 [debug] [Thread-2 (]: Began running node model.dbt_stocks.gold_treechart
+[0m03:18:09.285971 [info ] [Thread-4 (]: 3 of 5 START sql view model COMMON.gold_candlestick ............................ [RUN]
+[0m03:18:09.287484 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.dbt_stocks.gold_candlestick'
+[0m03:18:09.287886 [debug] [Thread-4 (]: Began compiling node model.dbt_stocks.gold_candlestick
+[0m03:18:09.289941 [debug] [Thread-4 (]: Writing injected SQL for node "model.dbt_stocks.gold_candlestick"
+[0m03:18:09.290532 [debug] [Thread-5 (]: Began running node model.dbt_stocks.gold_kpi
+[0m03:18:09.286880 [info ] [Thread-2 (]: 5 of 5 START sql view model COMMON.gold_treechart .............................. [RUN]
+[0m03:18:09.291963 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.dbt_stocks.bronze_stg_stock_quotes, now model.dbt_stocks.gold_treechart)
+[0m03:18:09.292679 [debug] [Thread-2 (]: Began compiling node model.dbt_stocks.gold_treechart
+[0m03:18:09.295445 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_stocks.gold_treechart"
+[0m03:18:09.291046 [info ] [Thread-5 (]: 4 of 5 START sql view model COMMON.gold_kpi .................................... [RUN]
+[0m03:18:09.297572 [debug] [Thread-5 (]: Acquiring new snowflake connection 'model.dbt_stocks.gold_kpi'
+[0m03:18:09.298823 [debug] [Thread-5 (]: Began compiling node model.dbt_stocks.gold_kpi
+[0m03:18:09.301062 [debug] [Thread-5 (]: Writing injected SQL for node "model.dbt_stocks.gold_kpi"
+[0m03:18:09.298215 [debug] [Thread-4 (]: Began executing node model.dbt_stocks.gold_candlestick
+[0m03:18:09.304419 [debug] [Thread-4 (]: Writing runtime sql for node "model.dbt_stocks.gold_candlestick"
+[0m03:18:09.305312 [debug] [Thread-2 (]: Began executing node model.dbt_stocks.gold_treechart
+[0m03:18:09.307505 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_stocks.gold_treechart"
+[0m03:18:09.308144 [debug] [Thread-5 (]: Began executing node model.dbt_stocks.gold_kpi
+[0m03:18:09.311245 [debug] [Thread-5 (]: Writing runtime sql for node "model.dbt_stocks.gold_kpi"
+[0m03:18:09.313837 [debug] [Thread-4 (]: Using snowflake connection "model.dbt_stocks.gold_candlestick"
+[0m03:18:09.316783 [debug] [Thread-4 (]: On model.dbt_stocks.gold_candlestick: create or replace   view STOCK_MDS.COMMON.gold_candlestick
+  
+  
+  
+  
+  as (
+    with enriched as (
+    select
+        symbol,
+        cast(market_timestamp as date) as trade_date,
+        day_low,
+        day_high,
+        current_price,
+        first_value(current_price) over (
+            partition by symbol, cast(market_timestamp as date)
+            order by market_timestamp
+        ) as candle_open,
+        last_value(current_price) over (
+            partition by symbol, cast(market_timestamp as date)
+            order by market_timestamp
+            rows between unbounded preceding and unbounded following
+        ) as candle_close
+    from STOCK_MDS.COMMON.silver_clean_stock_quotes
+),
+
+candles as (
+    select
+        symbol,
+        trade_date as candle_time,
+        min(day_low) as candle_low,
+        max(day_high) as candle_high,
+        any_value(candle_open) as candle_open,
+        any_value(candle_close) as candle_close,
+        avg(current_price) as trend_line
+    from enriched
+    group by symbol, trade_date
+),
+
+ranked as (
+    select
+        c.*,
+        row_number() over (
+            partition by symbol
+            order by candle_time desc
+        ) as rn
+    from candles c
+)
+
+select
+    symbol,
+    candle_time,
+    candle_low,
+    candle_high,
+    candle_open,
+    candle_close,
+    trend_line
+from ranked
+where rn <= 12
+order by symbol, candle_time
+  )
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "dbt_stocks", "target_name": "dev", "node_id": "model.dbt_stocks.gold_candlestick"} */;
+[0m03:18:09.317481 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m03:18:09.316006 [debug] [Thread-2 (]: Using snowflake connection "model.dbt_stocks.gold_treechart"
+[0m03:18:09.320875 [debug] [Thread-2 (]: On model.dbt_stocks.gold_treechart: create or replace   view STOCK_MDS.COMMON.gold_treechart
+  
+  
+  
+  
+  as (
+    WITH source AS (
+  SELECT
+    symbol,
+    TRY_CAST(current_price AS DOUBLE) AS current_price_dbl,
+    market_timestamp
+  FROM STOCK_MDS.COMMON.silver_clean_stock_quotes
+  -- optionally filter invalid rows:
+  WHERE TRY_CAST(current_price AS DOUBLE) IS NOT NULL
+),
+
+latest_day AS (
+  -- if market_timestamp is epoch seconds (NUMBER/INT):
+  SELECT CAST(TO_TIMESTAMP_LTZ(MAX(market_timestamp)) AS DATE) AS max_day
+  FROM source
+),
+
+latest_prices AS (
+  SELECT
+    symbol,
+    AVG(current_price_dbl) AS avg_price
+  FROM source
+  JOIN latest_day ld
+    ON CAST(TO_TIMESTAMP_LTZ(market_timestamp) AS DATE) = ld.max_day
+  GROUP BY symbol
+),
+
+all_time_volatility AS (
+  SELECT
+    symbol,
+    STDDEV_POP(current_price_dbl) AS volatility,             
+    CASE
+      WHEN AVG(current_price_dbl) = 0 THEN NULL
+      ELSE STDDEV_POP(current_price_dbl) / NULLIF(AVG(current_price_dbl), 0)
+    END AS relative_volatility
+  FROM source
+  GROUP BY symbol
+)
+
+SELECT
+  lp.symbol,
+  lp.avg_price,
+  v.volatility,
+  v.relative_volatility
+FROM latest_prices lp
+JOIN all_time_volatility v ON lp.symbol = v.symbol
+ORDER BY lp.symbol
+  )
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "dbt_stocks", "target_name": "dev", "node_id": "model.dbt_stocks.gold_treechart"} */;
+[0m03:18:09.320238 [debug] [Thread-5 (]: Using snowflake connection "model.dbt_stocks.gold_kpi"
+[0m03:18:09.322392 [debug] [Thread-5 (]: On model.dbt_stocks.gold_kpi: create or replace   view STOCK_MDS.COMMON.gold_kpi
+  
+  
+  
+  
+  as (
+    select
+    symbol,
+    current_price,
+    change_amount,
+    change_percent
+from (
+    select *,
+           row_number() over (partition by symbol order by fetched_at desc) as rn
+    from STOCK_MDS.COMMON.silver_clean_stock_quotes
+) t
+where rn = 1
+  )
+/* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "dbt_stocks", "target_name": "dev", "node_id": "model.dbt_stocks.gold_kpi"} */;
+[0m03:18:09.322838 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m03:18:09.731520 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.410 seconds
+[0m03:18:09.734695 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '646e357f-4df7-4af2-ba55-3a28aae525c6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012DAA790CD0>]}
+[0m03:18:09.735465 [info ] [Thread-2 (]: 5 of 5 OK created sql view model COMMON.gold_treechart ......................... [[32mSUCCESS 1[0m in 0.44s]
+[0m03:18:09.736435 [debug] [Thread-2 (]: Finished running node model.dbt_stocks.gold_treechart
+[0m03:18:09.934997 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.612 seconds
+[0m03:18:09.937845 [debug] [Thread-5 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '646e357f-4df7-4af2-ba55-3a28aae525c6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012DABA45010>]}
+[0m03:18:09.938597 [info ] [Thread-5 (]: 4 of 5 OK created sql view model COMMON.gold_kpi ............................... [[32mSUCCESS 1[0m in 0.64s]
+[0m03:18:09.939528 [debug] [Thread-5 (]: Finished running node model.dbt_stocks.gold_kpi
+[0m03:18:10.049320 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.732 seconds
+[0m03:18:10.054857 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '646e357f-4df7-4af2-ba55-3a28aae525c6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012DAA74AE70>]}
+[0m03:18:10.056405 [info ] [Thread-4 (]: 3 of 5 OK created sql view model COMMON.gold_candlestick ....................... [[32mSUCCESS 1[0m in 0.77s]
+[0m03:18:10.057809 [debug] [Thread-4 (]: Finished running node model.dbt_stocks.gold_candlestick
+[0m03:18:10.061036 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m03:18:10.061866 [debug] [MainThread]: Connection 'list_STOCK_MDS' was left open.
+[0m03:18:10.062664 [debug] [MainThread]: On list_STOCK_MDS: Close
+[0m03:18:10.235636 [debug] [MainThread]: Connection 'list_STOCK_MDS_COMMON' was left open.
+[0m03:18:10.236550 [debug] [MainThread]: On list_STOCK_MDS_COMMON: Close
+[0m03:18:10.384400 [debug] [MainThread]: Connection 'model.dbt_stocks.gold_treechart' was left open.
+[0m03:18:10.385282 [debug] [MainThread]: On model.dbt_stocks.gold_treechart: Close
+[0m03:18:10.540428 [debug] [MainThread]: Connection 'model.dbt_stocks.silver_clean_stock_quotes' was left open.
+[0m03:18:10.540965 [debug] [MainThread]: On model.dbt_stocks.silver_clean_stock_quotes: Close
+[0m03:18:10.696660 [debug] [MainThread]: Connection 'model.dbt_stocks.gold_candlestick' was left open.
+[0m03:18:10.699855 [debug] [MainThread]: On model.dbt_stocks.gold_candlestick: Close
+[0m03:18:10.866944 [debug] [MainThread]: Connection 'model.dbt_stocks.gold_kpi' was left open.
+[0m03:18:10.867576 [debug] [MainThread]: On model.dbt_stocks.gold_kpi: Close
+[0m03:18:11.048870 [info ] [MainThread]: 
+[0m03:18:11.049627 [info ] [MainThread]: Finished running 5 view models in 0 hours 0 minutes and 6.00 seconds (6.00s).
+[0m03:18:11.051248 [debug] [MainThread]: Command end result
+[0m03:18:11.103434 [debug] [MainThread]: Wrote artifact WritableManifest to D:\real-time-stocks-mds-main\dbt_stocks\target\manifest.json
+[0m03:18:11.108693 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\real-time-stocks-mds-main\dbt_stocks\target\semantic_manifest.json
+[0m03:18:11.113507 [debug] [MainThread]: Wrote artifact OsiDocument to D:\real-time-stocks-mds-main\dbt_stocks\target\osi_document.json
+[0m03:18:11.122873 [debug] [MainThread]: Wrote artifact RunExecutionResult to D:\real-time-stocks-mds-main\dbt_stocks\target\run_results.json
+[0m03:18:11.123841 [info ] [MainThread]: 
+[0m03:18:11.124645 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m03:18:11.125180 [info ] [MainThread]: 
+[0m03:18:11.125730 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=5
+[0m03:18:11.127430 [debug] [MainThread]: Command `dbt run` succeeded at 03:18:11.127229 after 12.49 seconds
+[0m03:18:11.128010 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012D8BFD07D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012DAB8827B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012DAB9C70B0>]}
+[0m03:18:11.128483 [debug] [MainThread]: Flushing usage events
+[0m03:18:12.315847 [debug] [MainThread]: An error was encountered while trying to flush usage events
